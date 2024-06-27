@@ -1,4 +1,3 @@
-// style
 import "./Footer.css";
 
 function Footer() {
@@ -6,7 +5,7 @@ function Footer() {
     <div className="footer">
       <div className="footer-container">
         <p>All rights reserved.</p>
-        <a href="https://t.me/mukh4mmadov">Ozodbek Muhammadov</a>
+        <a href="https://t.me/Abdurahm_0n">Abdurahmon</a>
       </div>
     </div>
   );
