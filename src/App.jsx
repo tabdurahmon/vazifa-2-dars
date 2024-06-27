@@ -1,8 +1,7 @@
-// style
 import "./App.css";
 
 import { useState } from "react";
-// components
+
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import UserList from "./components/userlist/UserList";
@@ -12,7 +11,6 @@ function App() {
   const [showModal, setShowModal] = useState(false);
   const [users, setUsers] = useState([]);
 
-  // delete user
   const deleteUser = (id) => {
     setUsers((prev) => {
       return prev.filter((user) => {
@@ -21,7 +19,6 @@ function App() {
     });
   };
 
-  // add user
   const addUser = (user) => {
     setUsers((prev) => {
       return [...prev, user];
@@ -29,7 +26,6 @@ function App() {
     setShowModal(false);
   };
 
-  // close modal
   const closeModal = (e) => {
     if (e.target.classList.value === "overlay") setShowModal(false);
     if (e.key === "Escape") setShowModal(false);
